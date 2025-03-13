@@ -91,14 +91,20 @@ function createPrompt(file: File, chunk: Chunk, prDetails: PRDetails): string {
 - Write the comment in GitHub Markdown format.
 - Use the given description only for the overall context and only comment the code.
 - IMPORTANT: NEVER suggest adding comments to the code.
- - Highlight potential improvements related to:
-   - AL language best practices  
-   - Naming conventions and clarity (PascalCase for procedures, meaningful variable names)  
-   - Performance issues (loops, repeated lookups, etc.)  
-   - Proper usage of triggers, events, or record operations
-   - Efficient filtering and record handling (SetFilter/SetRange, use of temporary records where needed)
-   - Database locking and using Record.SetCurrentKey
-   - Microsoft module architecture and facade pattern
+- Highlight potential improvements related to:
+  - AL language best practices  
+  - Naming conventions and clarity (PascalCase for procedures, meaningful variable names)  
+  - Performance issues (loops, repeated lookups, etc.)  
+  - Proper usage of triggers, events, or record operations
+  - Efficient filtering and record handling (SetFilter/SetRange, use of temporary records where needed)
+  - Database locking and using Record.SetCurrentKey
+  - Microsoft module architecture and facade pattern
+Ensure that all user-facing strings (tooltips, messages, confirms, errors, captions) use proper Business Central wording and grammar. Provide improved version or corrected wording. Check for: 
+  - Correct spelling and professional tone  
+  - Consistency with Business Central terminology (e.g., "post", "apply", "reconcile", not informal alternatives)  
+  - Proper sentence structure and no unnecessary abbreviations  
+  - Consistent formatting (e.g., using sentence case: "Do you want to delete this record?" instead of "Delete this record?") 
+
 
 Review the following code diff in the file "${
     file.to
