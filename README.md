@@ -1,5 +1,8 @@
 # AI Code Reviewer
 
+> **DEPRECATED**  
+> This repository is no longer maintained and has been replaced by [bc-ai-reviewer](https://github.com/AidentErfurt/bc-ai-reviewer).
+
 AI Code Reviewer is a GitHub Action that leverages Azure OpenAI API to provide intelligent feedback and suggestions on
 your pull requests. This powerful tool helps improve code quality and saves developers time by automating the code
 review process.
